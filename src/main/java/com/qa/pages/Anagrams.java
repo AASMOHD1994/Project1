@@ -12,7 +12,7 @@ public class Anagrams {
 	public static void main(String[] args) {
 		
 		String a="silent";
-		String b="listen";
+	//	String b="listen";
 		
 		char [] arr = a.toCharArray();
 		char [] arr1 = b.toCharArray();
