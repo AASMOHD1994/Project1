@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="classes" name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="com.qa.testcases.CheckboxExample2"/>
+      <class name="com.qa.testcases.CheckboxExample"/>
+      <class name="com.qa.testcases.CheckboxExample3"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
