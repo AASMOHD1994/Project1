@@ -35,6 +35,7 @@ public class MoveZeroesToEnd  {
 		 int u=9;
 		 // i have it in n2 from local
 		 
+
 		 for(int i=0;i<total.length;i++)
 		 {
 			 if(i<arr.length)
