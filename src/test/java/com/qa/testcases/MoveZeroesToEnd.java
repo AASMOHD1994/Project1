@@ -33,7 +33,6 @@ public class MoveZeroesToEnd  {
 		 int n = total.length;
 		 int j=0;
 		 int u=9;
-		 //this this
 		 
 		 for(int i=0;i<total.length;i++)
 		 {
