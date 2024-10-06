@@ -33,6 +33,7 @@ public class MoveZeroesToEnd  {
 		 int n = total.length;
 		 int j=0;
 		 int u=9;
+		 // i have it in n2 from local
 		 
 		 for(int i=0;i<total.length;i++)
 		 {
