@@ -32,6 +32,7 @@ public class MoveZeroesToEnd  {
 		 int total [] = new int[arr.length+arr2.length];
 		 int n = total.length;
 		 int j=0;
+		 int u=9;
 		 
 		 for(int i=0;i<total.length;i++)
 		 {
