@@ -33,7 +33,7 @@ public class MoveZeroesToEnd  {
 		 int n = total.length;
 		 int j=0;
 		 int u=9;
-		//i have added it in n2 from remote
+		//i have added it in n from remote
 		 
 		 for(int i=0;i<total.length;i++)
 		 {
