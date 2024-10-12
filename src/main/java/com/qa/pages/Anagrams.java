@@ -17,17 +17,17 @@ public class Anagrams {
 		char [] arr = a.toCharArray();
 		char [] arr1 = b.toCharArray();
 		
-		char [] g = checkAnagrams(arr,arr1);
+		boolean flag = checkAnagrams(arr,arr1);
 		
-		System.out.println(Arrays.toString(g));
+		System.out.println(flag);
 		
 		
 		
 	}
 	
-	public static char [] checkAnagrams(char [] arr, char [] arr1)
+	public static boolean checkAnagrams(char [] arr, char [] arr1)
 	{
-		
+		int count=0;
 		if(arr.length==arr1.length)
 		{
 			for (int i=0;i<arr.length;i++)
@@ -38,15 +38,25 @@ public class Anagrams {
 					
 					if(arr[i]==arr1[j])
 					{
-						arr[i]='$';
+						//arr[i]='$';
+						count++;
 					}
 				}
+				
 			}
 			
-			return arr;
+			if(arr.length==count)
+			{
+				return true;
+			}
+			else
+				return false;
+			
+			
 		}
+		return false;
 		
-		return new char[7];
+		
 		
 	}
 	

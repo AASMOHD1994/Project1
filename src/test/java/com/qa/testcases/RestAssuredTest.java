@@ -34,10 +34,12 @@ public class RestAssuredTest {
 	public void verifyLoginWithValidCred() throws IOException, InterruptedException {
 
 		Response res = given()
-		.contentType("application/json")
+		//.contentType("application/json")
+		.pathParam("mypath", "users")
+		.queryParam("page", 2)
 		.when()
 	//	.get("https://jsonplaceholder.typicode.com/posts");
-		.get("https://reqres.in/api/users?page=2");
+		.get("https://reqres.in/api/{mypath}");
 		
 	
 	//	JSONArray arr = new JSONArray(res.asString());
@@ -45,7 +47,34 @@ public class RestAssuredTest {
 		
 		
 	
-		System.out.print(ob.getJSONArray("data").getJSONObject(1).get("id"));
+		//System.out.print(ob.getJSONArray("data").getJSONObject(1).get("id"));
+		//System.out.print(arr.getJSONObject(0).getInt("id"));
+		
+//		for(int i=0;i<arr.length();i++)
+//		{
+//			
+//			System.out.println(arr.getJSONObject(i).getInt("id"));
+//		}
+		
+
+		
+	
+		
+		System.out.println(res.jsonPath().get("data.id").toString());
+//		for(int i=0;i<5;i++)
+//		{
+//			
+			//System.out.println(ob.getJSONArray("data").getJSONObject(i).getInt("id"));
+		
+		//System.out.println();
+		//res.jsonPath().get("data[0]")
+			//System.out.println(res.jsonPath().get("data["+i+"].id").toString());
+			
+//			System.out.println(count++);
+	
+			
+	//	}
+		
 		
 		
 	}

@@ -34,7 +34,7 @@ public class MoveZeroesToEnd  {
 
 		 int j=0;
 		 int u=9;
-		
+
 		 
 
 		 for(int i=0;i<total.length;i++)
