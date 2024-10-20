@@ -45,6 +45,7 @@ public class RestAssuredTest {
 	//	JSONArray arr = new JSONArray(res.asString());
 		JSONObject ob = new JSONObject(res.asString());
 		
+		ob.getJSONArray("data").getJSONObject(0).get("id");
 		
 	
 		//System.out.print(ob.getJSONArray("data").getJSONObject(1).get("id"));
