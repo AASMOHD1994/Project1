@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class GoodQuestionString {
+public class GoodQuestionString3 {
 
 	public static void main(String[] args) {
 
@@ -15,32 +15,23 @@ public class GoodQuestionString {
 		int end = 0;
 		int maxlen=0;
 
-		while (end < s.length())     // 0<14    1<14   2<14
-		
+		while(s.length()>end)
 		{
-			if (!hs.contains(s.charAt(end)))  //
-			
+			if(!hs.contains(s.charAt(end)))
 			{
-				
 				hs.add(s.charAt(end));
 				maxlen=Math.max(maxlen, end-start+1);
 				end++;
-				
-
-
 			}
-
-			else {                               //abcd
-
-
+			else
+			{
 				hs.remove(s.charAt(start));
 				start++;
 			}
-
 		}
 		
-		System.out.print(hs);
-
+		
+		System.out.println(hs);
 	}
 
 }

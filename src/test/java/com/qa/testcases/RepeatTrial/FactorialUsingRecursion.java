@@ -22,7 +22,7 @@ public class FactorialUsingRecursion {
 		if(num>0)
 		{
 			
-			result=(num)*(fact(num-1));
+			result=(num)*(fact(num-1)); 
 		}
 		
 		return result;

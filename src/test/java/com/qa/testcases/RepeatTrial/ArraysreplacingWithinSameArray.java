@@ -20,11 +20,11 @@ public class ArraysreplacingWithinSameArray {
 			for(int j=0;j<arr.length-1;j++)
 			{
 				
-				if(arr[j]==9)
+				if(arr[j+1]==9)
 				{
-					temp=arr[j];
-					arr[j]=arr[j+1];
-					arr[j+1]=temp;
+					temp=arr[j+1];
+					arr[j+1]=arr[j];
+					arr[j]=temp;
 					
 					
 				}
