@@ -25,25 +25,27 @@ public class MergeArraysAndSort {
 	
 		int [] arr1 = {1,2,5,6};
 		int [] arr2 = {7,8,9,10,4,3};
+		int k=arr2.length;
+		int n=k;
 		
 		int [] comb = new int [arr1.length + arr2.length];
 		int pos = 0;
 		
-		for (int j: arr1)
+		for(int i=0;i<comb.length;i++)
 		{
 			
-			comb[pos]=j;
-			pos++;
-		}
-		
-		for (int j: arr2)
-		{
+			if(i<arr1.length)
+			{
+				comb[i]=arr1[i];
+			}
+			else if(i>=arr1.length)
+			{
+
+				comb[i]=arr2[k-(n--)];
+				
+			}
 			
-			comb[pos]=j;
-			pos++;
 		}
-		
-		Arrays.sort(comb);
 		
 		System.out.println(Arrays.toString(comb));
 		
